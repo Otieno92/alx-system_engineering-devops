@@ -1,2 +1,2 @@
 #!/bin/bash
-path_dirs=$(echo $PATH | tr ':' '\n')count=0
+echo $(('echo $PATH | grep -0 " /" | wc -l'+ 1))
